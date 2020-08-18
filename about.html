@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="CSS/Main.css" rel="StyleSheet">
+        <title>About</title>
+        <style>
+            /* Set the size of the div element that contains the map */
+            #map {
+              height: 400px;  /* The height is 400 pixels */
+              width: 100%;  /* The width is the width of the web page */
+             }
+          </style>
+    </head>
+    <body>
+        <div>
+            <h2>About Me!</h2>  
+        </div>
+        <header class="fixedHeader"> 
+            <nav>
+                <a href="home.html">Home</a> |
+                <a href="portfolio.html">Portfolio</a> |
+                <a href="about.html">About</a>
+            </nav>       
+        </header>
+        <div>
+            <table>
+                <tr>
+                    <td>Name: </td>
+                    <td>Sumana Manoj</td>
+                </tr>
+                <tr>
+                    <td>Education: </td>
+                    <td>Bachelors in Engineering</td>
+                </tr>
+                <tr>
+                    <td>Occupation: </td>
+                    <td>Software Developer</td>
+                </tr>
+                <tr>
+                    <td>Main Skills: </td>
+                    <td>.Net, C#, SQL Server</td>
+                </tr>
+                <tr>
+                    <td>Soft skills: </td>
+                    <td>Experienced Customer Interaction, Good Team Player, Easily adaptable to any new technologies</td>
+                </tr>
+                <tr>
+                    <td>GitHub Link: </td>
+                    <td><a href="https://github.com/smj-github">My GitHub</a></td>
+                </tr>
+                <tr>
+                    <td>Resources: </td>
+                    <td><a href="https://www.w3schools.com/">w3schools</a></td>
+                </tr>
+                <tr>
+                    <td>Places Travelled: </td>
+                    <td>US, Canada, Europe</td>
+                </tr>
+                <tr>
+                    <td>Favorite Food: </td>
+                    <td><a href="https://youtu.be/xMCHFpJsZ_c">Pulao</a></td>
+                </tr>                
+                <tr>
+                    <td>Favorite Movie: </td>
+                    <td><a href="https://en.wikipedia.org/wiki/Bourne_(film_series)">Bourne Series</a></td>
+                </tr>
+                <tr>
+                    <td>Contact Me: </td>
+                    <td>sumana_manoj@grandcircus.com</td>
+                </tr>
+            </table>            
+        </div>
+        <div id="map"></div>
+        <script>
+            // Initialize and add the map
+            function initMap() {
+              // The location of Uluru
+              var gcDetroit = {lat: 42.336, lng: -83.049};
+              // The map, centered at Uluru
+              var map = new google.maps.Map(
+                  document.getElementById('map'), {zoom: 4, center: gcDetroit});
+              // The marker, positioned at Uluru
+              var marker = new google.maps.Marker({position: gcDetroit, map: map});
+            }
+                </script>
+                <script defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW2Xdvi3S053vpLUShSWlf9SaaHzSoNVo&callback=initMap">
+                </script>
+        <footer>
+            <div class="fixedFooter">Copyright &copy; 2020 Sumana Manoj</div>
+        </footer>
+    </body>
+    
+</html>

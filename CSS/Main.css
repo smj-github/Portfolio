@@ -1,0 +1,39 @@
+h1{
+    float: left;
+    transform: rotate(-20deg);
+}
+.h2Main{    
+    float: right;
+}
+h2{
+    font-family: cursive;
+    font-size: 20;
+    color: brown;
+    /*float: right;*/
+}
+h3{
+    color:royalblue;
+}
+.fixedHeader, .fixedFooter{
+    /*width: 100%;
+    position: fixed;*/        
+    background: rgb(203, 211, 88);
+    /*background: rgb(202, 201, 110);*/
+    padding: 10px 0;
+    *color: #fff;
+}
+/*
+.fixedHeader{
+    top: 10;
+}*/
+.fixedFooter{
+    bottom: 0;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 10;
+}
+.container{
+    width: 80%;
+    margin: 0 auto; /* Center the DIV horizontally */
+}
